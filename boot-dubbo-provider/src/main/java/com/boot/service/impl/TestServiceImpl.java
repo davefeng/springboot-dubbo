@@ -7,6 +7,12 @@ import com.boot.service.TestService;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+/**
+ * Description @service(version = "1.0.0")
+ * 暴露服务时定义version的版本号，要与远程调用@Reference的版本一致。否则，在控制器启动时，会报错。
+ * @Authr wangfeng
+ * @Date 2021-06-15 16:28:38
+ */
 @Service(version = "1.0.0")
 public class TestServiceImpl implements TestService {
 

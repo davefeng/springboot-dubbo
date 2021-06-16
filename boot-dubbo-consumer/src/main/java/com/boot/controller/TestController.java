@@ -7,6 +7,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * Description
+ * 1.@Reference(version = "1.0.0") 用在消费端，表明使用的是服务端的哪个服务
+ * @Authr wangfeng
+ * @Date 2021-06-15 15:37:47
+ */
+
 @RestController
 @RequestMapping("/")
 public class TestController {
