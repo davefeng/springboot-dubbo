@@ -1,6 +1,7 @@
 package com.boot.controller;
 
 import com.alibaba.dubbo.config.annotation.Reference;
+import com.boot.annotation.DemoAnno;
 import com.boot.domain.User;
 import com.boot.service.TestService;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -28,5 +29,11 @@ public class TestController {
     @GetMapping("user")
     public User user() {
         return testService.findUser();
+    }
+
+    @RequestMapping("/demoAnno")
+    @DemoAnno
+    public void demoAnno() {
+        System.out.println("ok");
     }
 }
